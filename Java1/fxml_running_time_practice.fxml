@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="bp" fx:controller="RunningTimePracticeController" 
+            xmlns:fx="http://javafx.com/fxml" >
+        
+  <top>
+             
+    <VBox>     
+     <HBox fx:id="hBox1" alignment="center" spacing="10" >
+
+      <Label text="Enter an integer between 5 and 25 for the number of array elements" />
+      <TextField fx:id="numberOfElementsInput" minWidth="5" />
+
+     </HBox>
+     
+     <HBox fx:id="hBox2" alignment="center" spacing="10" >
+
+      <Button text="Show Array" fx:id="showArray"    
+          onAction="#showArray"/>
+      <Button text="Selection Sort" fx:id="selectionSort"    
+          onAction="#activity"/>
+     </HBox>
+   
+    </VBox>
+  </top>
+  
+</BorderPane>
+
